@@ -1,0 +1,32 @@
+➜  GL_basecamp git:(HW1) git checkout -b Homework_branch 1d9d944
+Switched to a new branch 'Homework_branch'
+➜  GL_basecamp git:(Homework_branch) git log  --oneline --decorate --graph --all
+➜  GL_basecamp git:(Homework_branch) touch HW1.txt
+➜  GL_basecamp git:(Homework_branch) ✗ ls
+CONTRIBUTING.md HW1.txt         README.txt
+➜  GL_basecamp git:(Homework_branch) ✗ git add .
+➜  GL_basecamp git:(Homework_branch) ✗ git commit
+hint: Waiting for your editor to close the file... error: There was a problem with the editor 'vi'.
+Please supply the message using either -m or -F option.
+➜  GL_basecamp git:(Homework_branch) ✗ git commit -m "added HW1.txt"
+[Homework_branch 439413a] added HW1.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 HW1.txt
+➜  GL_basecamp git:(Homework_branch) git status
+On branch Homework_branch
+nothing to commit, working tree clean
+➜  GL_basecamp git:(Homework_branch) git rm --cached HW1.txt
+rm 'HW1.txt'
+➜  GL_basecamp git:(Homework_branch) ✗ git status
+On branch Homework_branch
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	deleted:    HW1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	HW1.txt
+
+
