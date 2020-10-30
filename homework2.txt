@@ -1,4 +1,54 @@
-Conflict to resolve
+➜  GL_basecamp git:(master) ✗ git checkout -b hw2_branch
+Switched to a new branch 'hw2_branch'
+➜  GL_basecamp git:(hw2_branch) ✗ ls
+1.txt         HW1.txt       homework2.txt
+➜  GL_basecamp git:(hw2_branch) ✗ vim homework2.txt
+➜  GL_basecamp git:(hw2_branch) ✗ git add .
+➜  GL_basecamp git:(hw2_branch) ✗ git commit -m "modified homework2.txt"
+[hw2_branch 60fc3d7] modified homework2.txt
+ 1 file changed, 13 insertions(+), 241 deletions(-)
+ rewrite homework2.txt (99%)
+➜  GL_basecamp git:(hw2_branch) git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+➜  GL_basecamp git:(master) vim homework2.txt
+➜  GL_basecamp git:(master) ✗ git add .
+➜  GL_basecamp git:(master) ✗ git commit -m "changed homework2 to create conflict"
+[master 2f4c063] changed homework2 to create conflict
+ 1 file changed, 2 insertions(+), 241 deletions(-)
+ rewrite homework2.txt (99%)
+➜  GL_basecamp git:(master) git merge hw2_branch
+Auto-merging homework2.txt
+CONFLICT (content): Merge conflict in homework2.txt
+Automatic merge failed; fix conflicts and then commit the result.
+➜  GL_basecamp git:(master) ✗ vim homework2.txt
+➜  GL_basecamp git:(master) ✗ git merge hw2_branch
+error: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+➜  GL_basecamp git:(master) ✗ git add .
+➜  GL_basecamp git:(master) ✗ git log --oneline --graph --all
+➜  GL_basecamp git:(master) ✗ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+
+        modified:   homework2.txt
+
+➜  GL_basecamp git:(master) ✗ git commit -m "concluding merge"
+[master 20c5283] concluding merge
+➜  GL_basecamp git:(master) git merge hw2_branch
+Already up to date.
+➜  GL_basecamp git:(master) git status log
+On branch master
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)Conflict to resolve
 
 
 ➜  GL_basecamp git:(master) ✗ git checkout -b hw2_branch
