@@ -1,3 +1,4 @@
+
 ➜  GL_basecamp git:(master) ✗ git checkout -b hw2_branch
 Switched to a new branch 'hw2_branch'
 ➜  GL_basecamp git:(hw2_branch) ✗ ls
@@ -48,16 +49,5 @@ Already up to date.
 ➜  GL_basecamp git:(master) git status log
 On branch master
 Your branch is ahead of 'origin/master' by 3 commits.
-  (use "git push" to publish your local commits)Conflict to resolve
-
-
-➜  GL_basecamp git:(master) ✗ git checkout -b hw2_branch
-Switched to a new branch 'hw2_branch'
-➜  GL_basecamp git:(hw2_branch) ✗ ls
-1.txt         HW1.txt       homework2.txt
-➜  GL_basecamp git:(hw2_branch) ✗ vim homework2.txt
-➜  GL_basecamp git:(hw2_branch) ✗ git checkout master
-M	homework2.txt
-Switched to branch 'master'
-Your branch is up to date with 'origin/master'.
+  
 
