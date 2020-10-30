@@ -1,4 +1,5 @@
-➜  GL_basecamp git:(HW1) git checkout -b Homework_branch 1d9d944
+➜ Comment: added fix changes to file
+GL_basecamp git:(HW1) git checkout -b Homework_branch 1d9d944
 Switched to a new branch 'Homework_branch'
 ➜  GL_basecamp git:(Homework_branch) git log  --oneline --decorate --graph --all
 ➜  GL_basecamp git:(Homework_branch) touch HW1.txt
