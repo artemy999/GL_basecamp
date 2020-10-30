@@ -1,0 +1,35 @@
+Action log: 
+mkdir -p ~/f1/f2/f3/f4/f5/f6
+cd f1 && touch file1.txt && echo ‘This is a test’ > file1.txt
+cp file1.txt f2/f3/f4/f5/f6
+cd  ~
+find . -name file1.txt
+find: ./Pictures/Photos Library.photoslibrary: Operation not permitted
+find: ./Library/Caches/CloudKit/com.apple.Safari: Operation not permitted
+find: ./Library/Caches/com.apple.safaridavclient: Operation not permitted
+find: ./Library/Caches/com.apple.Safari: Operation not permitted
+find: ./Library/Suggestions: Operation not permitted
+find: ./Library/IdentityServices: Operation not permitted
+find: ./Library/Messages: Operation not permitted
+find: ./Library/HomeKit: Operation not permitted
+find: ./Library/Mail: Operation not permitted
+find: ./Library/Safari: Operation not permitted
+find: ./Library/Containers/com.apple.Home: Operation not permitted
+find: ./Library/Containers/com.apple.VoiceMemos: Operation not permitted
+find: ./Library/Containers/com.apple.iChat: Operation not permitted
+find: ./Library/Containers/com.apple.mail: Operation not permitted
+find: ./Library/Containers/com.apple.stocks: Operation not permitted
+find: ./Library/Containers/com.apple.Safari: Operation not permitted
+find: ./Library/Metadata/CoreSpotlight: Operation not permitted
+find: ./Library/PersonalizationPortrait: Operation not permitted
+find: ./Library/Calendars: Operation not permitted
+find: ./Library/Cookies: Operation not permitted
+find: ./Library/Application Support/CallHistoryDB: Operation not permitted
+find: ./Library/Application Support/AddressBook: Operation not permitted
+find: ./Library/Application Support/com.apple.TCC: Operation not permitted
+find: ./Library/Application Support/CallHistoryTransactions: Operation not permitted
+./f1/file1.txt
+./f1/f2/f3/f4/f5/f6/file1.txt
+➜  ~ git:(master) ✗ cd f1 && rm file1.txt
+➜  f1 git:(master) ✗ ls
+f2
