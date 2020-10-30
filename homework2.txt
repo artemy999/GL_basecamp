@@ -1,2 +1,17 @@
+<<<<<<< HEAD
   modified the file for master 
+=======
+Conflict to resolve
+
+
+➜  GL_basecamp git:(master) ✗ git checkout -b hw2_branch
+Switched to a new branch 'hw2_branch'
+➜  GL_basecamp git:(hw2_branch) ✗ ls
+1.txt         HW1.txt       homework2.txt
+➜  GL_basecamp git:(hw2_branch) ✗ vim homework2.txt
+➜  GL_basecamp git:(hw2_branch) ✗ git checkout master
+M	homework2.txt
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+>>>>>>> hw2_branch
 
