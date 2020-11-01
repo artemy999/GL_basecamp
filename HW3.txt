@@ -1,4 +1,4 @@
-Action log: 
+Step1
 mkdir -p ~/f1/f2/f3/f4/f5/f6
 cd f1 && touch file1.txt && echo ‘This is a test’ > file1.txt
 cp file1.txt f2/f3/f4/f5/f6
@@ -33,3 +33,15 @@ find: ./Library/Application Support/CallHistoryTransactions: Operation not permi
 ➜  ~ git:(master) ✗ cd f1 && rm file1.txt
 ➜  f1 git:(master) ✗ ls
 f2
+Step2
+    cat abc xyz.txt 2> err.txt
+Step3
+    cat abc xyz.txt > err.txt 2>&1     
+Step4
+    sudo chown root abc.txt && sudo chmod +x abc
+Step5
+    cmd1 || cmd2
+Step6
+    cmd1 && cmd2
+Step7
+     echo$(pwd)
