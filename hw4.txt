@@ -1,0 +1,42 @@
+package com.company;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+
+public class Main {
+
+
+    public static void main(String[] args) {
+        // declaration and instantiation of objects/variables
+        System.setProperty("webdriver.chrome.driver","/usr/local/bin/chromedriver");
+        WebDriver driver = new ChromeDriver();
+
+        //maximizing window
+        driver.manage().window().maximize();
+
+        //open Google
+        driver.get("https://www.google.com");
+
+        //Search for 'selenium install ubuntu python' text
+        driver.findElement(By.name("q")).sendKeys("selenium install ubuntu python" + Keys.RETURN);
+
+        //From result search open result that leads you to 'pypi.org'
+        WebElement linkFound = driver.findElement(By.partialLinkText("pypi.org"));
+        linkFound.click();
+
+        //Find 'selenium' library there('Search projects' field)
+        driver.findElement(By.id("search")).sendKeys("selenium" + Keys.RETURN);
+
+        //Open second result from found items
+        driver.findElements(By.partialLinkText("selenium")).get(1).click();
+
+
+        //close Chrome
+        //driver.close();
+
+    }
+
+}
