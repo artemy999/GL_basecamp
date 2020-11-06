@@ -1,0 +1,47 @@
+package com.company;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class Part2 {
+
+    public static void main(String[] args) {
+        // declaration and instantiation of objects/variables
+        System.setProperty("webdriver.chrome.driver","/usr/local/bin/chromedriver");
+        WebDriver driver = new ChromeDriver();
+
+        //maximizing window
+        driver.manage().window().maximize();
+
+        //Open 'https://www.globallogic.com/ua/careers/'
+        driver.get("https://www.globallogic.com/ua/careers/");
+
+        //accept cookies
+        WebDriverWait wait = new WebDriverWait(driver,5);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll\"]")));
+        driver.findElement(By.xpath("//*[@id=\"CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll\"]")).click();
+
+        //put 'QA' into search field
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("by_keyword")));
+        driver.findElement(By.id("by_keyword")).sendKeys("QA" + Keys.RETURN);
+
+
+        //Find and open result from found items list
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/section[3]/div[2]/div/div[3]/div[2]/a/div/div/div[1]/p[1]")));
+        WebElement firstResultText = driver.findElement(By.xpath("/html/body/div[1]/section[3]/div[2]/div/div[3]/div[2]/a/div/div/div[1]/p[1]"));
+        String headerOfFirstResultText = firstResultText.getText();
+
+        //print to console header of first result
+        System.out.println(headerOfFirstResultText);
+
+        //close Chrome
+        //driver.close();
+
+    }
+
+}
+
