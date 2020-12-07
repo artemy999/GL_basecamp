@@ -1,0 +1,18 @@
+package com.company;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+
+public static class GLCareersResultPage extends BasePage{
+    public WebDriver browser;
+    private static By FIRST_RESULT_HEADER = By.xpath("/html/body/div[1]/section[3]/div[2]/div/div[3]/div[2]/a/div/div/div[1]/p[1]");
+
+    public GLCareersResultPage(WebDriver browser) {
+        super(browser);
+    }
+
+    public static void printFirstResult() {
+        System.out.println(BasePage.findAndPrintFirstResult(FIRST_RESULT_HEADER));
+    }
+}
+

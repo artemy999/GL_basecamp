@@ -1,0 +1,38 @@
+package com.company;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public static class GLCareersPage extends BasePage {
+    public String URL = "https://www.globallogic.com/ua/careers/";
+
+    private static By COOKIE_ALLOW_ALL_BUTTON = By.id("CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll");
+    private static By SEARCH_FIELD = By.id("by_keyword");
+    private static By SEARCH_BUTTON = By.xpath("//*[@id=\"hero\"]/div/div/div/div/div/div/div[1]/form/div/button");
+
+
+    public void GlCareerPage(WebDriver driver) {
+        super(driver);
+    }
+
+    public WebDriver getBrowser() {
+        return driver;
+    }
+
+    public void setBrowser(WebDriver driver) {
+        this.driver = driver;
+    }
+
+    public String getURL() {
+        return URL;
+    }
+
+    public static void openGLCarreersPage(String URL) {
+        this.driver.get(URL);
+        click(COOKIE_ALLOW_ALL_BUTTON);
+    }
+
+    public void sendSearchString(String SearchString) {
+        sendKeys(SEARCH_FIELD, SearchString);
+    }
+}

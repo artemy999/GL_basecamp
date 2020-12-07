@@ -1,0 +1,416 @@
+Last login: Mon Nov 16 23:16:00 on ttys000
+[oh-my-zsh] Would you like to update? [Y/n] n
+➜  ~ git:(master) ✗ ls
+Applications Documents    IdeaProjects Movies       Pictures     Public
+Desktop      Downloads    Library      Music        Postman      git
+➜  ~ git:(master) ✗ cd git
+➜  git git:(master) ls
+CODE_OF_CONDUCT.md             match-trees.c
+COPYING                        mem-pool.c
+Documentation                  mem-pool.h
+GIT-VERSION-GEN                merge-blobs.c
+INSTALL                        merge-blobs.h
+LGPL-2.1                       merge-recursive.c
+Makefile                       merge-recursive.h
+README.md                      merge.c
+RelNotes                       mergesort.c
+abspath.c                      mergesort.h
+aclocal.m4                     mergetools
+add-interactive.c              midx.c
+add-interactive.h              midx.h
+add-patch.c                    name-hash.c
+advice.c                       negotiator
+advice.h                       notes-cache.c
+alias.c                        notes-cache.h
+alias.h                        notes-merge.c
+alloc.c                        notes-merge.h
+alloc.h                        notes-utils.c
+apply.c                        notes-utils.h
+apply.h                        notes.c
+archive-tar.c                  notes.h
+archive-zip.c                  object-store.h
+archive.c                      object.c
+archive.h                      object.h
+attr.c                         oid-array.c
+attr.h                         oid-array.h
+banned.h                       oidmap.c
+base85.c                       oidmap.h
+bisect.c                       oidset.c
+bisect.h                       oidset.h
+blame.c                        pack-bitmap-write.c
+blame.h                        pack-bitmap.c
+blob.c                         pack-bitmap.h
+blob.h                         pack-check.c
+block-sha1                     pack-objects.c
+bloom.c                        pack-objects.h
+bloom.h                        pack-revindex.c
+branch.c                       pack-revindex.h
+branch.h                       pack-write.c
+builtin                        pack.h
+builtin.h                      packfile.c
+bulk-checkin.c                 packfile.h
+bulk-checkin.h                 pager.c
+bundle.c                       parse-options-cb.c
+bundle.h                       parse-options.c
+cache-tree.c                   parse-options.h
+cache-tree.h                   patch-delta.c
+cache.h                        patch-ids.c
+chdir-notify.c                 patch-ids.h
+chdir-notify.h                 path.c
+check-builtins.sh              path.h
+check_bindir                   pathspec.c
+checkout.c                     pathspec.h
+checkout.h                     perl
+ci                             pkt-line.c
+color.c                        pkt-line.h
+color.h                        po
+column.c                       ppc
+column.h                       preload-index.c
+combine-diff.c                 pretty.c
+command-list.txt               pretty.h
+commit-graph.c                 prio-queue.c
+commit-graph.h                 prio-queue.h
+commit-reach.c                 progress.c
+commit-reach.h                 progress.h
+commit-slab-decl.h             promisor-remote.c
+commit-slab-impl.h             promisor-remote.h
+commit-slab.h                  prompt.c
+commit.c                       prompt.h
+commit.h                       protocol.c
+common-main.c                  protocol.h
+compat                         prune-packed.c
+config.c                       prune-packed.h
+config.h                       quote.c
+config.mak.dev                 quote.h
+config.mak.in                  range-diff.c
+config.mak.uname               range-diff.h
+configure.ac                   reachable.c
+connect.c                      reachable.h
+connect.h                      read-cache.c
+connected.c                    rebase-interactive.c
+connected.h                    rebase-interactive.h
+contrib                        rebase.c
+convert.c                      rebase.h
+convert.h                      ref-filter.c
+copy.c                         ref-filter.h
+credential.c                   reflog-walk.c
+credential.h                   reflog-walk.h
+csum-file.c                    refs
+csum-file.h                    refs.c
+ctype.c                        refs.h
+daemon.c                       refspec.c
+date.c                         refspec.h
+decorate.c                     remote-curl.c
+decorate.h                     remote.c
+delta-islands.c                remote.h
+delta-islands.h                replace-object.c
+delta.h                        replace-object.h
+detect-compiler                repo-settings.c
+diff-delta.c                   repository.c
+diff-lib.c                     repository.h
+diff-no-index.c                rerere.c
+diff.c                         rerere.h
+diff.h                         reset.c
+diffcore-break.c               reset.h
+diffcore-delta.c               resolve-undo.c
+diffcore-order.c               resolve-undo.h
+diffcore-pickaxe.c             revision.c
+diffcore-rename.c              revision.h
+diffcore.h                     run-command.c
+dir-iterator.c                 run-command.h
+dir-iterator.h                 send-pack.c
+dir.c                          send-pack.h
+dir.h                          sequencer.c
+editor.c                       sequencer.h
+entry.c                        serve.c
+environment.c                  serve.h
+ewah                           server-info.c
+exec-cmd.c                     setup.c
+exec-cmd.h                     sh-i18n--envsubst.c
+fetch-negotiator.c             sha1-file.c
+fetch-negotiator.h             sha1-lookup.c
+fetch-pack.c                   sha1-lookup.h
+fetch-pack.h                   sha1-name.c
+fmt-merge-msg.c                sha1collisiondetection
+fmt-merge-msg.h                sha1dc
+fsck.c                         sha1dc_git.c
+fsck.h                         sha1dc_git.h
+fsmonitor.c                    sha256
+fsmonitor.h                    shallow.c
+fuzz-commit-graph.c            shallow.h
+fuzz-pack-headers.c            shell.c
+fuzz-pack-idx.c                shortlog.h
+generate-cmdlist.sh            sideband.c
+generate-configlist.sh         sideband.h
+gettext.c                      sigchain.c
+gettext.h                      sigchain.h
+git-add--interactive.perl      split-index.c
+git-archimport.perl            split-index.h
+git-bisect.sh                  stable-qsort.c
+git-compat-util.h              strbuf.c
+git-cvsexportcommit.perl       strbuf.h
+git-cvsimport.perl             streaming.c
+git-cvsserver.perl             streaming.h
+git-difftool--helper.sh        string-list.c
+git-filter-branch.sh           string-list.h
+git-gui                        strvec.c
+git-instaweb.sh                strvec.h
+git-merge-octopus.sh           sub-process.c
+git-merge-one-file.sh          sub-process.h
+git-merge-resolve.sh           submodule-config.c
+git-mergetool--lib.sh          submodule-config.h
+git-mergetool.sh               submodule.c
+git-p4.py                      submodule.h
+git-parse-remote.sh            symlinks.c
+git-quiltimport.sh             t
+git-rebase--preserve-merges.sh tag.c
+git-request-pull.sh            tag.h
+git-send-email.perl            tar.h
+git-sh-i18n.sh                 tempfile.c
+git-sh-setup.sh                tempfile.h
+git-submodule.sh               templates
+git-svn.perl                   thread-utils.c
+git-web--browse.sh             thread-utils.h
+git.c                          tmp-objdir.c
+git.rc                         tmp-objdir.h
+gitk-git                       trace.c
+gitweb                         trace.h
+gpg-interface.c                trace2
+gpg-interface.h                trace2.c
+graph.c                        trace2.h
+graph.h                        trailer.c
+grep.c                         trailer.h
+grep.h                         transport-helper.c
+hash.h                         transport-internal.h
+hashmap.c                      transport.c
+hashmap.h                      transport.h
+help.c                         tree-diff.c
+help.h                         tree-walk.c
+hex.c                          tree-walk.h
+http-backend.c                 tree.c
+http-fetch.c                   tree.h
+http-push.c                    unicode-width.h
+http-walker.c                  unimplemented.sh
+http.c                         unix-socket.c
+http.h                         unix-socket.h
+ident.c                        unpack-trees.c
+imap-send.c                    unpack-trees.h
+iterator.h                     upload-pack.c
+json-writer.c                  upload-pack.h
+json-writer.h                  url.c
+khash.h                        url.h
+kwset.c                        urlmatch.c
+kwset.h                        urlmatch.h
+levenshtein.c                  usage.c
+levenshtein.h                  userdiff.c
+line-log.c                     userdiff.h
+line-log.h                     utf8.c
+line-range.c                   utf8.h
+line-range.h                   varint.c
+linear-assignment.c            varint.h
+linear-assignment.h            vcs-svn
+list-objects-filter-options.c  version.c
+list-objects-filter-options.h  version.h
+list-objects-filter.c          versioncmp.c
+list-objects-filter.h          walker.c
+list-objects.c                 walker.h
+list-objects.h                 wildmatch.c
+list.h                         wildmatch.h
+ll-merge.c                     worktree.c
+ll-merge.h                     worktree.h
+lockfile.c                     wrap-for-bin.sh
+lockfile.h                     wrapper.c
+log-tree.c                     write-or-die.c
+log-tree.h                     ws.c
+ls-refs.c                      wt-status.c
+ls-refs.h                      wt-status.h
+mailinfo.c                     xdiff
+mailinfo.h                     xdiff-interface.c
+mailmap.c                      xdiff-interface.h
+mailmap.h                      zlib.c
+➜  git git:(master) cd ..
+➜  ~ git:(master) ✗ ls
+Applications Documents    IdeaProjects Movies       Pictures     Public
+Desktop      Downloads    Library      Music        Postman      git
+➜  ~ git:(master) ✗ cd Donwloads
+cd: no such file or directory: Donwloads
+➜  ~ git:(master) ✗ ls
+Applications Documents    IdeaProjects Movies       Pictures     Public
+Desktop      Downloads    Library      Music        Postman      git
+➜  ~ git:(master) ✗ cd Downloads
+➜  Downloads git:(master) ✗ ls
+2020 02 15 Київстар Домашній інтернет.pdf
+API-TESTING-20201127T180747Z-001.zip
+Artem_Dovzhenko_QA.pdf
+Frameworks-20201127T180742Z-001.zip
+GIT-20201127T180739Z-001.zip
+HC_Job_Offer_ Artem Dovzhenko.pdf
+HC_Job_Offer_ Artem Dovzhenko_0408.pdf
+HTTP-20201127T180734Z-001.zip
+JF_MainTask-master
+JF_MainTask-master.zip
+JavaRushTasks
+Junior QA engineer (manual) 2nd test task.pdf
+Linux-20201127T180728Z-001.zip
+Mobile checklist template _DovzhenkoArtem(EN).xlsx
+Practical malware analysis.pdf
+REST-20201127T180720Z-001.zip
+REST.mkv
+REST.pdf
+Selenium-20201127T180715Z-001.zip
+Services Agreement QA Engineer - Artem Dovzhenko March 2020_encrypted_.pdf
+Software_Testing_Basics_2_izdanie (1).pdf
+Software_Testing_Basics_2_izdanie.pdf
+Tjava9.pdf
+bstroe_testirovanie.pdf
+ideaIC-2020.1.1.dmg
+script.js
+selenium-java-3.141.59
+simple-app.py
+test_page_object.py
+➜  Downloads git:(master) ✗ cd ~
+➜  ~ git:(master) ✗ ls
+Applications Documents    IdeaProjects Movies       Pictures     Public
+Desktop      Downloads    Library      Music        Postman      git
+➜  ~ git:(master) ✗ cd Documents
+➜  Documents git:(master) ✗ ls
+GitHub                            HW5_Test_init
+HW5_1                             HW5_basePage
+HW5_2                             HW5_tests
+HW5_BaseTest                      My Workspace.postman_globals.json
+HW5_PageCareers                   jar_files
+➜  Documents git:(master) ✗ cd GitHub
+➜  GitHub git:(master) ✗ l
+total 40
+drwxr-xr-x   6 artemdovzhenko  staff   192B Oct 30 23:52 .
+drwx------+ 14 artemdovzhenko  staff   448B Nov  7 21:32 ..
+-rw-r--r--@  1 artemdovzhenko  staff   6.0K Oct 23 00:04 .DS_Store
+drwxr-xr-x   7 artemdovzhenko  staff   224B Nov  6 22:57 GL_basecamp
+drwxr-xr-x   7 artemdovzhenko  staff   224B Oct 25 02:35 gl_basecamp_2020
+-rw-r--r--   1 artemdovzhenko  staff    10K Oct 30 23:51 homework2.txt
+➜  GitHub git:(master) ✗ ls
+GL_basecamp      gl_basecamp_2020 homework2.txt
+➜  GitHub git:(master) ✗ cd GL_basecamp
+➜  GL_basecamp git:(hw4_branch) ls
+HW1.txt       homework2.txt hw4.txt       hw4part2.txt
+➜  GL_basecamp git:(hw4_branch) cd ..
+➜  GitHub git:(master) ✗ ls gl_basecamp_2020
+README.txt     homework1.txt  merge_conflict test_logout
+➜  GitHub git:(master) ✗ ls
+GL_basecamp      gl_basecamp_2020 homework2.txt
+➜  GitHub git:(master) ✗ cd gl_basecamp_2020
+➜  gl_basecamp_2020 git:(repo_branch) ls
+README.txt     homework1.txt  merge_conflict test_logout
+➜  gl_basecamp_2020 git:(repo_branch) cd ..
+➜  GitHub git:(master) ✗ ls
+GL_basecamp      gl_basecamp_2020 homework2.txt
+➜  GitHub git:(master) ✗ cd GL_basecamp
+➜  GL_basecamp git:(hw4_branch) ls
+HW1.txt       homework2.txt hw4.txt       hw4part2.txt
+➜  GL_basecamp git:(hw4_branch) git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+➜  GL_basecamp git:(master) git checkout -b "HW5"
+Switched to a new branch 'HW5'
+➜  GL_basecamp git:(HW5) touch HW5.txt
+➜  GL_basecamp git:(HW5) ✗ vim HW5.txt
+➜  GL_basecamp git:(HW5) ✗ git add HW5.txt
+➜  GL_basecamp git:(HW5) ✗ git commit -m "added HW5.txt"
+[HW5 0da3ac8] added HW5.txt
+ 1 file changed, 37 insertions(+)
+ create mode 100644 HW5.txt
+➜  GL_basecamp git:(HW5) git push
+fatal: The current branch HW5 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin HW5
+
+➜  GL_basecamp git:(HW5) git push --set-upstream origin HW5
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 750 bytes | 750.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+remote: 
+remote: Create a pull request for 'HW5' on GitHub by visiting:
+remote:      https://github.com/artemy999/GL_basecamp/pull/new/HW5
+remote: 
+To https://github.com/artemy999/GL_basecamp
+ * [new branch]      HW5 -> HW5
+Branch 'HW5' set up to track remote branch 'HW5' from 'origin'.
+➜  GL_basecamp git:(HW5) ls
+HW1.txt       HW5.txt       homework2.txt
+➜  GL_basecamp git:(HW5) git checkout HW4
+error: pathspec 'HW4' did not match any file(s) known to git
+➜  GL_basecamp git:(HW5) git log  --oneline --decorate --graph --all
+➜  GL_basecamp git:(HW5) git checkout hw3_branch
+Switched to branch 'hw3_branch'
+Your branch is up to date with 'origin/hw3_branch'.
+➜  GL_basecamp git:(hw3_branch) ls
+HW1.txt       HW3.txt       homework2.txt
+➜  GL_basecamp git:(hw3_branch) git checkout hw4_branch
+Switched to branch 'hw4_branch'
+Your branch is up to date with 'origin/hw4_branch'.
+➜  GL_basecamp git:(hw4_branch) ls
+HW1.txt       homework2.txt hw4.txt       hw4part2.txt
+➜  GL_basecamp git:(hw4_branch) git checkout hw3_branch
+Switched to branch 'hw3_branch'
+Your branch is up to date with 'origin/hw3_branch'.
+➜  GL_basecamp git:(hw3_branch) ls
+HW1.txt       HW3.txt       homework2.txt
+➜  GL_basecamp git:(hw3_branch) vim HW3.txt
+➜  GL_basecamp git:(hw3_branch) git checkout HW5       
+Switched to branch 'HW5'
+Your branch is up to date with 'origin/HW5'.
+➜  GL_basecamp git:(HW5) ls
+HW1.txt       HW5.txt       homework2.txt
+➜  GL_basecamp git:(HW5) touch HW3.txt
+➜  GL_basecamp git:(HW5) ✗ ls
+HW1.txt       HW3.txt       HW5.txt       homework2.txt
+➜  GL_basecamp git:(HW5) ✗ touch HW4.txt
+➜  GL_basecamp git:(HW5) ✗ ls
+HW1.txt       HW3.txt       HW4.txt       HW5.txt       homework2.txt
+➜  GL_basecamp git:(HW5) ✗ git checkout hw3_branch
+error: The following untracked working tree files would be overwritten by checkout:
+	HW3.txt
+Please move or remove them before you switch branches.
+Aborting
+➜  GL_basecamp git:(HW5) ✗ y
+zsh: command not found: y
+➜  GL_basecamp git:(HW5) ✗ rm HW3.txt
+➜  GL_basecamp git:(HW5) ✗ ls
+HW1.txt       HW4.txt       HW5.txt       homework2.txt
+➜  GL_basecamp git:(HW5) ✗ git checkout hw3_branch
+Switched to branch 'hw3_branch'
+Your branch is up to date with 'origin/hw3_branch'.
+➜  GL_basecamp git:(hw3_branch) ✗ ls
+HW1.txt       HW3.txt       HW4.txt       homework2.txt
+➜  GL_basecamp git:(hw3_branch) ✗ vim HW3.txt
+
+Step1
+mkdir -p ~/f1/f2/f3/f4/f5/f6
+cd f1 && touch file1.txt && echo ‘This is a test’ > file1.txt
+cp file1.txt f2/f3/f4/f5/f6
+cd  ~
+find . -name file1.txt
+find: ./Pictures/Photos Library.photoslibrary: Operation not permitted
+find: ./Library/Caches/CloudKit/com.apple.Safari: Operation not permitted
+find: ./Library/Caches/com.apple.safaridavclient: Operation not permitted
+find: ./Library/Caches/com.apple.Safari: Operation not permitted
+find: ./Library/Suggestions: Operation not permitted
+find: ./Library/IdentityServices: Operation not permitted
+find: ./Library/Messages: Operation not permitted
+find: ./Library/HomeKit: Operation not permitted
+find: ./Library/Mail: Operation not permitted
+find: ./Library/Safari: Operation not permitted
+find: ./Library/Containers/com.apple.Home: Operation not permitted
+find: ./Library/Containers/com.apple.VoiceMemos: Operation not permitted
+find: ./Library/Containers/com.apple.iChat: Operation not permitted
+find: ./Library/Containers/com.apple.mail: Operation not permitted
+find: ./Library/Containers/com.apple.stocks: Operation not permitted
+find: ./Library/Containers/com.apple.Safari: Operation not permitted
+find: ./Library/Metadata/CoreSpotlight: Operation not permitted
+"HW3.txt" 47L, 2024C
+
