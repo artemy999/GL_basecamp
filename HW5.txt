@@ -1,0 +1,37 @@
+package com.company;
+import org.junit.Test;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class HomeWork5_part2 {
+
+    public static void main(String[] args) {
+
+        @BeforeEach
+        public static void setup(){
+            // declaration and instantiation of objects/variables
+            System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
+            //driver copy creation
+            WebDriver driver = new ChromeDriver();
+            //maximizing window
+            driver.manage().window().maximize();
+        }
+
+        @Test
+        private static ChromeDriver driver;
+        private static GLCareersPage careersPage;
+        private static GLCareersResultPage careersResultPage;
+
+            GLCareersPage.sendSearchString("QA");
+            GLCareersPage.openGLCarreersPage();
+            GLCareersResultPage.printFirstResult();
+
+        @AfterEach
+        void tearDown() {
+            ChromeDriver.quit();
+        }
+  }
+}
+
