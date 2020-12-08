@@ -11,12 +11,13 @@ public class HomeWork5_part2 {
 
         @BeforeEach
         public static void setup(){
-            // declaration and instantiation of objects/variables
-            System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
-            //driver copy creation
+            //driver location and setup
+            System.setProperty("webdriver.chrome.driver", ConfProperties.getProperty("chromedriver"));
+            //driver instance creation
             WebDriver driver = new ChromeDriver();
             //maximizing window
             driver.manage().window().maximize();
+            driver.get(ConfProperties.getProperty("glcarreerspage")); }
         }
 
         @Test
